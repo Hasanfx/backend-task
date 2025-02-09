@@ -2,9 +2,13 @@ generator client {
   provider = "prisma-client-js"
 }
 
+generator json_server {
+  provider = "prisma-client-js"
+  outputFileName=db.json
+}
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./db.json"
 }
 
 model Task {
