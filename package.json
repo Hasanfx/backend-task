@@ -9,7 +9,7 @@
 	"scripts": {
 		"dev": "ts-node src/server.ts",
 		"build": "tsc",
-		"start": "node src/dist/server.js"
+		"start": "node dist/server.js"
 	},
 	"devDependencies": {
 		"@types/cookie-parser": "^1.4.8",
