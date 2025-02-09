@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    
+     "baseUrl": ".",
+        "paths": {
+          "@prisma/client": ["node_modules/@prisma/client"]
+        },
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*.ts", "src/prisma/schema.prisma"],
+  "exclude": ["node_modules"]
+}
